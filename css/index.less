@@ -1,0 +1,88 @@
+@import "base.less";
+/* 导航链接 */
+.nav-links {
+    padding: 10px;
+    a {
+        width: 33.333%;
+        float: left;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+}
+/* 品牌专区 */
+.brand {
+    padding: 0 10px;
+    img {
+        width: 100%;
+    }
+    ul {
+        overflow: hidden;
+        padding: 10px 0;
+        li {
+            width: 25%;
+            float: left;
+            a {
+                display: block;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+/* 运动生活专区 */
+.product {
+    padding: 0 10px;
+    img {
+        width: 100%;
+    }
+    ul {
+        padding: 6px 0;
+        li {
+            width: 50%;
+            float: left;
+            padding: 5px;
+            a {
+                display: block;
+                box-shadow: 0 0 5px #ccc;
+                padding: 5px;
+                img {
+                    width: 100%;
+                }
+                & .name {
+                    display: block;
+                    padding: 5px;
+                    font-size: 14px;
+                    color: #8f8f94;
+                    line-height: 18px;
+                    text-align: center;
+                }
+                & p {
+                    text-align: center;
+                    padding-top: 6px;
+                    span:first-of-type {
+                        color: #f20;
+                        padding-right: 2px;
+                    }
+                    span:last-of-type {
+                        text-decoration: line-through;
+                        padding-left: 2px;
+                    }
+                }
+                .buy-now {
+                    display: block;
+                    width: 80px;
+                    height: 30px;
+                    background-color: #ccc;
+                    font-size: 14px;
+                    text-align: center;
+                    line-height: 30px;
+                    border-radius: 4px;
+                    margin: 0 auto 5px auto;
+                }
+            }
+        }
+    }
+}
