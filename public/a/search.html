@@ -8,6 +8,9 @@
 	<link rel="stylesheet" href="css/search.css">
 	<link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.min.css">
 	<script src="assets/mui/js/mui.min.js"></script>
+	<script src="./assets/zepto/zepto.min.js"></script>
+	<script src="./assets/artTemplate/template-native.js"></script>
+	<script src="./js/search.js"></script>
 </head>
 <body>
 	<header class="mui-bar mui-bar-nav my-header">
@@ -37,20 +40,25 @@
 			<!-- 搜索框 -->
 			<div class="search">
 				<input type="text" placeholder="搜索您喜欢的商品">
-				<input type="button" value="搜索">
+				<input type="button" value="搜索" id="search-btn">
 			</div>
 			<!-- 搜索框END -->
 
 			<!-- 搜索历史 -->
 			<div class="history-top mui-clearfix">
 				<span class="title mui-pull-left">搜索历史</span>
-				<span class="clear mui-pull-right mui-icon mui-icon-trash">清空历史</span>
+				<span class="clear mui-pull-right mui-icon mui-icon-trash" id="clearBtn">清空历史</span>
 			</div>
-			<ul class="mui-table-view"> 
-
+			<ul class="mui-table-view" id="history-box"> 
+				
 			</ul>
 			<!-- 搜索历史END -->
 		</div>
 	</div>
+<script id="historyTpl" type="text/template">
+	<% for(var i = 0; i < result.length; i++) { %>
+		<li class="mui-table-view-cell"><%=result[i] %></li>
+	<% } %>
+</script>
 </body>
 </html>
