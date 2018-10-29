@@ -20,7 +20,7 @@ $(function () {
             //将关键字数组存储在本地
             localStorage.setItem('keyArr',JSON.stringify(keyArr));
             
-            localStorage.href = "search-result.html?keyword=" + keyword;
+            location.href = "search-result.html?keyword=" + keyword;
         }else{
             //用户没有输入关键字
             alert('请输入要搜索的商品关键字')

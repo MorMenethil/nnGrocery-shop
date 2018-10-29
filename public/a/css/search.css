@@ -70,3 +70,6 @@ a {
 .container .history-top .clear.mui-icon-trash:before {
   margin-right: 4px;
 }
+.container .mui-table-view {
+  background-color: transparent;
+}
