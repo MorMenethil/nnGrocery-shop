@@ -1,0 +1,102 @@
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  color: #000;
+}
+body .mui-content {
+  background-color: #fff;
+}
+/* 头部块 */
+.my-header {
+  background-color: #A3A3A3;
+}
+.my-header > h1 {
+  color: black;
+}
+.my-header .mui-icon-search {
+  color: black;
+}
+/* 底部块 */
+.my-footer {
+  background-color: #A3A3A3;
+}
+.my-footer .mui-tab-item {
+  color: black;
+}
+.my-footer .mui-tab-item.mui-active {
+  color: #fff;
+}
+.mui-content {
+  background-color: #fff;
+}
+.mui-content .filter {
+  width: 92%;
+  margin: 10px auto 0 auto;
+}
+.mui-content .mui-col-xs-6 {
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  background-color: #efeff4;
+}
+.mui-content .mui-icon {
+  font-size: 12px;
+}
+.mui-content .product {
+  width: 100%;
+  padding: 0 10px;
+}
+.mui-content .product ul {
+  padding: 6px 0;
+}
+.mui-content .product ul li {
+  width: 50%;
+  float: left;
+  padding: 5px;
+}
+.mui-content .product ul li a {
+  display: block;
+  box-shadow: 0 0 5px #ccc;
+  padding: 5px;
+}
+.mui-content .product ul li a img {
+  width: 100%;
+}
+.mui-content .product ul li a .name {
+  display: block;
+  color: black;
+  font-size: 14px;
+  text-align: center;
+  line-height: 18px;
+  height: 38px;
+  overflow: hidden;
+  padding: 5px;
+}
+.mui-content .product ul li a p {
+  text-align: center;
+  padding-top: 6px;
+}
+.mui-content .product ul li a p span:first-of-type {
+  color: #f20;
+  padding-right: 2px;
+}
+.mui-content .product ul li a p span:last-of-type {
+  text-decoration: line-through;
+  padding-left: 2px;
+}
+.mui-content .product ul li a .buy-now {
+  display: block;
+  text-align: center;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #ccc;
+  color: black;
+  font-size: 14px;
+  border-radius: 4px;
+  margin: 0 auto 5px auto;
+}

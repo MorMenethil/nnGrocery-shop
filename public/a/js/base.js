@@ -1,8 +1,12 @@
-$(function () { 
-    mui('.my-footer').on('tap','a',function(){
-        window.top.location.href=this.href;
-    });
-    // $('.my-footer').on('click','a',function () { 
-    //     $(this).addClass('active').siblings().removeClass('active');
-    //  })
- })
+$(function(){
+
+	// 恢复A元素的跳转
+	$('body').on('tap', 'a', function(){
+
+		mui.openWindow({
+			url: $(this).attr('href')
+		});
+
+	});
+
+});
